@@ -21,5 +21,8 @@
   "bugs": {
     "url": "https://github.com/smeghead/whois-result-parser/issues"
   },
-  "homepage": "https://github.com/smeghead/whois-result-parser#readme"
+  "homepage": "https://github.com/smeghead/whois-result-parser#readme",
+  "dependencies": {
+    "dayjs": "^1.11.2"
+  }
 }
