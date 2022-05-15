@@ -1,0 +1,13 @@
+version: '3'
+services:
+  node:
+    image: node:16-alpine
+    volumes:
+     - ./:/usr/src/app
+     - node_modules:/usr/src/app/node_modules
+    environment:
+     - CHOKIDAR_USEPOLLING=true
+    user: node
+    working_dir: /usr/src/app
+volumes:
+  node_modules:
