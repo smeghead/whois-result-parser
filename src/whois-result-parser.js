@@ -46,6 +46,13 @@ const rules = {
         'creationDate': /^\[登録年月日\]\s+(.+)$/,
         'expirationDate': /^\[有効期限\]\s+(.+)$/,
     },
+    edu: {
+        'domainName': /^Domain Name: *([^\s]+)/,
+        'registrar': /^Domain record activated: *(.+)/,
+        'updatedDate': /^Domain record last updated: *(.+)/,
+        'creationDate': /^Domain record activated: *(.+)/,
+        'expirationDate': /^Domain expires: *(.+)/,
+    },
 };
 
 const searchPropertyValue = (lines, key, regex) => {
