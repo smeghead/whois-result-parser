@@ -26,7 +26,7 @@ npm install dayjs
  * edu
  * gov [not tested yet]
  * mil [not tested yet]
- * int [not tested yet]
+ * int
  * info [not tested yet]
  * biz [not tested yet]
  * name [not tested yet]

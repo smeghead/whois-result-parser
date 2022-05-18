@@ -33,7 +33,6 @@ class WhoisResultParser {
 
 const defaultRule = {
     'domainName': /^Domain Name: *([^\s]+)/,
-    'registrar': /^Registrar: *(.+)/,
     'updatedDate': /^Updated Date: *(.+)/,
     'creationDate': /^Creat(?:ed|ion) Date: *(.+)/,
     'expirationDate': /Expir\w+ Date: *(.+)/,
@@ -41,16 +40,20 @@ const defaultRule = {
 const rules = {
     jp: {
         'domainName': /^\[Domain Name\]\s+([^\s]+)/,
-        'registrar': /^\[登録年月日\]\s+(.+)$/,
         'updatedDate': /^\[最終更新\]\s+(.+)$/,
         'creationDate': /^\[登録年月日\]\s+(.+)$/,
         'expirationDate': /^\[有効期限\]\s+(.+)$/,
     },
     edu: {
         'domainName': /^Domain Name: *([^\s]+)/,
-        'registrar': /^Domain record activated: *(.+)/,
         'updatedDate': /^Domain record last updated: *(.+)/,
         'creationDate': /^Domain record activated: *(.+)/,
+        'expirationDate': /^Domain expires: *(.+)/,
+    },
+    int: {
+        'domainName': /^domain: *([^\s]+)/,
+        'updatedDate': /^changed: *(.+)/,
+        'creationDate': /^created: *(.+)/,
         'expirationDate': /^Domain expires: *(.+)/,
     },
 };
