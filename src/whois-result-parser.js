@@ -13,16 +13,14 @@ class WhoisResultParser {
     }
 
     parse() {
-        console.log(this.result);
         const lines = this.result.split(/[\r\n]+/);
 
         const rootDomain = this.domainName.replace(/^.*\.([^\.]*)$/, '$1');
         let rule = defaultRule;
-        console.log(rootDomain);
         if (rootDomain in rules) {
             rule = rules[rootDomain];
         }
-        console.log(rule);
+//         console.log(rule);
         const whois = {};
         for (const key in rule) {
             whois[key] = searchPropertyValue(lines, key, rule[key]);
@@ -76,7 +74,7 @@ const searchPropertyValue = (lines, key, regex) => {
     if (values.length === 0) {
         return null;
     }
-    console.log(values);
+//     console.log(values);
     return values[0];
 };
 

@@ -1,0 +1,11 @@
+#!/usr/bin/bash
+DOMAIN=$1
+
+if [ -z "$DOMAIN" ]; then
+	echo "usage: $0 <domain>" >&2
+	exit 1
+fi
+
+whois $DOMAIN > $DOMAIN.txt
+cat google.com.json | sed -e "s/google.com/$DOMAIN/" > $DOMAIN.json
+

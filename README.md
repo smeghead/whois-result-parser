@@ -30,10 +30,10 @@ npm install dayjs
  * info
  * biz
  * name [not tested yet]
- * pro [not tested yet]
- * museum [not tested yet]
- * aero [not tested yet]
- * coop [not tested yet]
+ * pro
+ * museum
+ * aero
+ * coop
  * jobs [not tested yet]
  * travel [not tested yet]
  * mobi [not tested yet]
