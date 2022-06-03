@@ -38,12 +38,12 @@ npm install dayjs
  * travel [not tested yet]
  * mobi [not tested yet]
  * cat [not tested yet]
- * asia [not tested yet]
- * tel [not tested yet]
+ * asia
+ * tel
  * xxx [not tested yet]
  * post [not tested yet]
 
- * ac [not tested yet]
+ * ac
  * ad [not tested yet]
  * ae [not tested yet]
  * af [not tested yet]
@@ -159,7 +159,7 @@ npm install dayjs
  * je [not tested yet]
  * jm [not tested yet]
  * jo [not tested yet]
- * jp [not tested yet]
+ * jp
  * ke [not tested yet]
  * kg [not tested yet]
  * kh [not tested yet]

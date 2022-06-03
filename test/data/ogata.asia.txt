@@ -1,0 +1,30 @@
+Domain Name: OGATA.ASIA
+Registry Domain ID: D107700000002788703-AGRS
+Registrar WHOIS Server: whois.discount-domain.com
+Registrar URL: http://www.onamae.com
+Updated Date: 2021-11-30T05:25:55Z
+Creation Date: 2013-09-09T09:32:56Z
+Registry Expiry Date: 2023-09-09T09:32:56Z
+Registrar Registration Expiration Date:
+Registrar: GMO Internet, Inc. d/b/a Onamae.com
+Registrar IANA ID: 49
+Registrar Abuse Contact Email:
+Registrar Abuse Contact Phone:
+Reseller:
+Domain Status: ok https://icann.org/epp#ok
+Registrant Organization: OGATA CONSTRUCTION inc.
+Registrant State/Province: Kumamoto
+Registrant Country: JP
+Name Server: NS1.XSERVER.JP
+Name Server: NS2.XSERVER.JP
+Name Server: NS3.XSERVER.JP
+Name Server: NS4.XSERVER.JP
+Name Server: NS5.XSERVER.JP
+DNSSEC: unsigned
+URL of the ICANN Whois Inaccuracy Complaint Form: https://www.icann.org/wicf/
+>>> Last update of WHOIS database: 2022-06-03T14:03:12Z <<<
+
+For more information on Whois status codes, please visit https://icann.org/epp
+
+Access to WHOIS information is provided to assist persons in determining the contents of a domain name registration record in the registry database. The data in this record is provided by The Registry Operator for informational purposes only, and accuracy is not guaranteed.  This service is intended only for query-based access. You agree that you will use this data only for lawful purposes and that, under no circumstances will you use this data to (a) allow, enable, or otherwise support the transmission by e-mail, telephone, or facsimile of mass unsolicited, commercial advertising or solicitations to entities other than the data recipient's own existing customers; or (b) enable high volume, automated, electronic processes that send queries or data to the systems of Registry Operator, a Registrar, or Afilias except as reasonably necessary to register domain names or modify existing registrations. All rights reserved. Registry Operator reserves the right to modify these terms at any time. By submitting this query, you agree to abide by this policy.
+The Registrar of Record identified in this output may have an RDDS service that can be queried for additional information on how to contact the Registrant, Admin, or Tech contact of the queried domain name.
