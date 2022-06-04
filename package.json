@@ -1,5 +1,5 @@
 {
-  "name": "@smeghead/whois-result-parser",
+  "name": "@smeghead7/whois-result-parser",
   "version": "0.0.1",
   "description": "Parse a whois command result text data into a json object.",
   "main": "index.js",
