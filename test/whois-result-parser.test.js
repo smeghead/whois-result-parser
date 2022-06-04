@@ -1,5 +1,5 @@
 const fs = require('fs');
-const WhoisResultParser = require('../src/whois-result-parser');
+const WhoisResultParser = require('../dist/src/whois-result-parser');
 
 test('initialize', () => {
     const raw = fs.readFileSync('./test/data/google.com.txt');

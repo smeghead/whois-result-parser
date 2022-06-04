@@ -15,7 +15,7 @@ class WhoisResultParser {
         this.result = result
     }
 
-    parse() {
+    parse(): ParseResult {
         const lines = this.result.split(/[\r\n]+/);
 
         const topLevelDomain = this.domainName.replace(/^.*\.([^\.]*)$/, '$1');
@@ -29,8 +29,15 @@ class WhoisResultParser {
             const obj: {[key: string]: RegExp} = rule;
             whois[key] = searchPropertyValue(lines, key, obj[key]);
         }
-        return whois;
+        return whois as ParseResult;
     }
+}
+
+type ParseResult = {
+    'domainName': string;
+    'updatedDate': string|null;
+    'creationDate': string|null;
+    'expirationDate': string|null;
 }
 
 type Rule = {

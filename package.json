@@ -1,5 +1,5 @@
 {
-  "name": "whois-result-parser",
+  "name": "@smeghead/whois-result-parser",
   "version": "0.0.1",
   "description": "Parse a whois command result text data into a json object.",
   "main": "index.js",
@@ -23,6 +23,7 @@
   },
   "homepage": "https://github.com/smeghead/whois-result-parser#readme",
   "dependencies": {
-    "dayjs": "^1.11.2"
+    "dayjs": "^1.11.2",
+    "typescript": "^4.7.3"
   }
 }
