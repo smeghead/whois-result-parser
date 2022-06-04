@@ -1,13 +1,16 @@
 const dayjs = require('dayjs');
 
 class WhoisResultParser {
-    constructor(domainName, result) {
+    private domainName: string;
+    private result: string;
+
+    constructor(domainName: string, result: string) {
         if ( ! domainName) {
-            throw new Exception('ERROR: domainName is required.');
+            throw new Error('ERROR: domainName is required.');
         }
         this.domainName = domainName
         if ( ! result) {
-            throw new Exception('ERROR: result is required.');
+            throw new Error('ERROR: result is required.');
         }
         this.result = result
     }
@@ -15,27 +18,35 @@ class WhoisResultParser {
     parse() {
         const lines = this.result.split(/[\r\n]+/);
 
-        const rootDomain = this.domainName.replace(/^.*\.([^\.]*)$/, '$1');
+        const topLevelDomain = this.domainName.replace(/^.*\.([^\.]*)$/, '$1');
         let rule = defaultRule;
-        if (rootDomain in rules) {
-            rule = rules[rootDomain];
+        if (topLevelDomain in rules) {
+            rule = rules[topLevelDomain];
         }
 //         console.log(rule);
-        const whois = {};
+        const whois: {[key: string]: any} = {};
         for (const key in rule) {
-            whois[key] = searchPropertyValue(lines, key, rule[key]);
+            const obj: {[key: string]: RegExp} = rule;
+            whois[key] = searchPropertyValue(lines, key, obj[key]);
         }
         return whois;
     }
 }
 
-const defaultRule = {
+type Rule = {
+    'domainName': RegExp;
+    'updatedDate': RegExp;
+    'creationDate': RegExp;
+    'expirationDate': RegExp;
+}
+
+const defaultRule: Rule = {
     'domainName': /^Domain Name: *([^\s]+)/,
     'updatedDate': /^Updated Date: *(.+)/,
     'creationDate': /^Creat(?:ed|ion) Date: *(.+)/,
     'expirationDate': /Expir\w+ Date: *(.+)/,
 };
-const rules = {
+const rules: {[key: string]: Rule} = {
     jp: {
         'domainName': /^\[Domain Name\]\s+([^\s]+)/,
         'updatedDate': /^\[最終更新\]\s+(.+)$/,
@@ -56,7 +67,7 @@ const rules = {
     },
 };
 
-const searchPropertyValue = (lines, key, regex) => {
+const searchPropertyValue = (lines: string[], key: string, regex: RegExp): string|null => {
     const values = lines.map(line => {
         const matches = line.match(regex);
         if ( ! matches) {
