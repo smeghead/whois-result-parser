@@ -2,12 +2,15 @@
   "name": "@smeghead7/whois-result-parser",
   "version": "0.0.1",
   "description": "Parse a whois command result text data into a json object.",
-  "main": "index.js",
+  "main": "dist/whois-result-parser.js",
+  "types": "dist/whois-result-parser.d.js",
   "devDependencies": {
     "jest": "^28.1.0"
   },
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "build": "tsc",
+    "prepare": "npm run build"
   },
   "repository": {
     "type": "git",
