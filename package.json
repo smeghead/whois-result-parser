@@ -1,6 +1,6 @@
 {
   "name": "@smeghead7/whois-result-parser",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Parse a whois command result text data into a json object.",
   "main": "dist/whois-result-parser.js",
   "types": "dist/whois-result-parser.d.js",
