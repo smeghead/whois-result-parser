@@ -120,7 +120,7 @@ npm install dayjs
  * ck [not tested yet]
  * cl [not tested yet]
  * cm [not tested yet]
- * cn [not tested yet]
+ * cn
  * co [not tested yet]
  * cr [not tested yet]
  * cu [not tested yet]
@@ -178,7 +178,7 @@ npm install dayjs
  * ie [not tested yet]
  * il [not tested yet]
  * im [not tested yet]
- * in [not tested yet]
+ * in
  * io [not tested yet]
  * iq [not tested yet]
  * ir [not tested yet]
