@@ -1,5 +1,9 @@
 # whois-result-parser #
 
+Parse the result of the `whois` command to get the expiration date, creation date, update date, etc.
+
+It is intended to be used to parse the raw text of the `whois` command obtained using a package such as` whois-light`.
+
 ## Usage ##
 
 ```bash
@@ -11,19 +15,17 @@ npm i @smeghead7/whois-result-parser
 const whois = require('whois-light');
 const WhoisResultParser = require('@smeghead7/whois-result-parser');
 
-whois.lookup("ntt.jp")
-  .then(function (whois) {
-    // process raw whois information here
-    const parser = new WhoisResultParser('ntt.jp', whois);
-    console.log(parser.parse());
-    // => {
-    //   domainName: 'NTT.JP',
-    //   updatedDate: '2022-06-01T01:05:07+00:00',
-    //   creationDate: '2001-05-09T00:00:00+00:00',
-    //   expirationDate: '2023-05-31T00:00:00+00:00'
-    // }
-  })
-  .catch(console.error);
+(async () => {
+  const whoisResult = await whois.lookup("ntt.jp")
+  const parser = new WhoisResultParser('ntt.jp', whoisResult);
+  console.log(parser.parse());
+})();
+// => {
+//   domainName: 'NTT.JP',
+//   updatedDate: '2022-06-01T01:05:07+00:00',
+//   creationDate: '2001-05-09T00:00:00+00:00',
+//   expirationDate: '2023-05-31T00:00:00+00:00'
+// }
 ```
 
 ## Development Environment ##
