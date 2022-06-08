@@ -40,7 +40,7 @@ docker-compose run --rm node sh
 
 ```bash
 npm init
-npm install typescript
+npm install --save-dev typescript
 npx tsc --init
 npm install --save-dev jest
 npm install dayjs
