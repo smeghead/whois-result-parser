@@ -1,0 +1,49 @@
+
+% Copyright (c) Nic.br
+%  The use of the data below is only permitted as described in
+%  full by the Use and Privacy Policy at https://registro.br/upp ,
+%  being prohibited its distribution, commercialization or
+%  reproduction, in particular, to use it for advertising or
+%  any similar purpose.
+%  2022-06-09T11:26:34-03:00 - IP: 240d:1c:39:9300:e875:a3a0:cb3:4193
+
+domain:      vistabeagle.com.br
+owner:       K2 Comercio e Industria Ltda
+ownerid:     01.167.639/0001-29
+responsible: Israel Rodnei de Faustino
+country:     BR
+owner-c:     KCL54
+tech-c:      ANAOL294
+nserver:     ns1.lojasbeagle.com.br
+nsstat:      20220608 AA
+nslastaa:    20220608
+nserver:     ns2.lojasbeagle.com.br
+nsstat:      20220608 AA
+nslastaa:    20220608
+saci:        yes
+created:     20170413 #16879785
+changed:     20220414
+expires:     20240413
+status:      published
+
+nic-hdl-br:  KCL54
+person:      K2 Comercio Ltda
+e-mail:      k2suporte@lojasbeagle.com.br
+country:     BR
+created:     20001208
+changed:     20201014
+
+nic-hdl-br:  ANAOL294
+person:      ANDRE ANDRADE DE OLIVEIRA
+e-mail:      analistati.senior@lojasbeagle.com.br
+country:     BR
+created:     20180619
+changed:     20180619
+
+% Security and mail abuse issues should also be addressed to
+% cert.br, http://www.cert.br/ , respectivelly to cert@cert.br
+% and mail-abuse@cert.br
+%
+% whois.registro.br accepts only direct match queries. Types
+% of queries are: domain (.br), registrant (tax ID), ticket,
+% provider, CIDR block, IP and ASN.

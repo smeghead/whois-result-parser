@@ -103,7 +103,7 @@ npm install dayjs
  * bn [not tested yet]
  * bo [not tested yet]
  * bq [not tested yet]
- * br [not tested yet]
+ * br
  * bs [not tested yet]
  * bt [not tested yet]
  * bv [not tested yet]
@@ -174,7 +174,7 @@ npm install dayjs
  * hr [not tested yet]
  * ht [not tested yet]
  * hu [not tested yet]
- * id [not tested yet]
+ * id
  * ie [not tested yet]
  * il [not tested yet]
  * im [not tested yet]

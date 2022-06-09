@@ -84,6 +84,12 @@ const rules: {[key: string]: Rule} = {
         'creationDate': /^Created On: *(.+)/,
         'expirationDate': /^Expiration Date: *(.+)/,
     },
+    br: {
+        'domainName': /^domain: *([^\s]+)/,
+        'updatedDate': /^changed: *(\d{8})/,
+        'creationDate': /^created: *(\d{8})/,
+        'expirationDate': /^expires: *(\d{8})/,
+    },
 };
 
 const searchPropertyValue = (lines: string[], key: string, regex: RegExp): string|null => {
