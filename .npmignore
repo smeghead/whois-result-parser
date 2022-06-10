@@ -4,3 +4,4 @@
 /test
 tsconfig.json
 *.un~
+docker-compose.yml
