@@ -1,0 +1,63 @@
+
+   Domain name:
+      TOKELAU-INFO.TK is Active
+
+   Owner contact:
+      Organization: Taloha, Inc.
+      Name:         Joost Zuurbier
+      Address:      Singel 540
+      Zipcode:      1017 AZ
+      City:         Amsterdam
+      State:        Noord-Holland
+      Country:      Netherlands
+      Phone:        +31-020-3208833
+      Fax:          +31-020-3208832
+      E-mail:       joostz@taloha.com
+
+   Admin contact:
+      Organization: Taloha, Inc.
+      Name:         Joost Zuurbier
+      Address:      Singel 540
+      Zipcode:      1017 AZ
+      City:         Amsterdam
+      State:        Noord-Holland
+      Country:      Netherlands
+      Phone:        +31-020-3208833
+      Fax:          +31-020-3208832
+      E-mail:       joostz@taloha.com
+
+   Billing contact:
+      Organization: Taloha, Inc.
+      Name:         Joost Zuurbier
+      Address:      Singel 540
+      Zipcode:      1017 AZ
+      City:         Amsterdam
+      State:        Noord-Holland
+      Country:      Netherlands
+      Phone:        +31-020-3208833
+      Fax:          +31-020-3208832
+      E-mail:       joostz@taloha.com
+
+   Tech contact:
+      Organization: Taloha, Inc.
+      Name:         Joost Zuurbier
+      Address:      Singel 540
+      Zipcode:      1017 AZ
+      City:         Amsterdam
+      State:        Noord-Holland
+      Country:      Netherlands
+      Phone:        +31-020-3208833
+      Fax:          +31-020-3208832
+      E-mail:       joostz@taloha.com
+
+   Domain Nameservers:
+      NS01.DOT.TK
+      NS02.DOT.TK
+      NS03.DOT.TK
+      NS04.DOT.TK
+
+
+   Domain registered: 06/17/2003
+   Record will expire on: 07/12/2077
+   Record maintained by: Dot TK Domain Registry
+

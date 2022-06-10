@@ -129,7 +129,7 @@ npm install dayjs
  * cx [not tested yet]
  * cy [not tested yet]
  * cz [not tested yet]
- * de [not tested yet]
+ * de
  * dj [not tested yet]
  * dk [not tested yet]
  * dm [not tested yet]
@@ -196,5 +196,6 @@ npm install dayjs
  * kn [not tested yet]
  * kp [not tested yet]
  * kr [not tested yet]
+ * tk
 
 

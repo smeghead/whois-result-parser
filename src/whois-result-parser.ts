@@ -90,9 +90,36 @@ const rules: {[key: string]: Rule} = {
         'creationDate': /^created: *(\d{8})/,
         'expirationDate': /^expires: *(\d{8})/,
     },
+    tk: {
+        'domainName': /Domain name:\s*(\S+)/m,
+        'updatedDate': /^changed: *(\d{8})/,
+        'creationDate': /Domain registered: *([\S]+)/,
+        'expirationDate': /Record will expire on: *([\S]+)/,
+    },
+    de: {
+        'domainName': /^Domain: *([^\s]+)/,
+        'updatedDate': /^Changed: *(.+)/,
+        'creationDate': /^Created: *(.+)/,
+        'expirationDate': /^Domain expires: *(.+)/,
+    },
+
 };
 
 const searchPropertyValue = (lines: string[], key: string, regex: RegExp): string|null => {
+    if (regex.multiline) {
+        const matches = lines.join('\n').match(regex);
+        if ( ! matches) {
+            return null;
+        }
+        let val = matches[1];
+        if (key.endsWith('Date')) {
+            if (val) {
+                const d = dayjs(val);
+                val = d.format();
+            }
+        }
+        return val;
+    }
     const values = lines.map(line => {
         const matches = line.match(regex);
         if ( ! matches) {
