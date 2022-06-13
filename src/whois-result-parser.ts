@@ -102,6 +102,24 @@ const rules: {[key: string]: Rule} = {
         'creationDate': /^Created: *(.+)/,
         'expirationDate': /^Domain expires: *(.+)/,
     },
+    au: {
+        'domainName': /^Domain Name: *([^\s]+)/,
+        'updatedDate': /^Last Modified: *(.+)/,
+        'creationDate': /^Created: *(.+)/,
+        'expirationDate': /^Domain expires: *(.+)/,
+    },
+    ru: {
+        'domainName': /^domain: *([^\s]+)/,
+        'updatedDate': /^Last updated on *(\S+)/,
+        'creationDate': /^created: *(\S+)/,
+        'expirationDate': /^paid-till: *(\S+)/,
+    },
+    uk: {
+        'domainName': /Domain name:\s*(\S+)/m,
+        'updatedDate': /Last updated: *(\S+)/,
+        'creationDate': /Registered on: *([\S]+)/,
+        'expirationDate': /Expiry date: *([\S]+)/,
+    },
 
 };
 

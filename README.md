@@ -85,7 +85,7 @@ npm install dayjs
  * ar [not tested yet]
  * as [not tested yet]
  * at [not tested yet]
- * au [not tested yet]
+ * au
  * aw [not tested yet]
  * ax [not tested yet]
  * az [not tested yet]
@@ -197,5 +197,8 @@ npm install dayjs
  * kp [not tested yet]
  * kr [not tested yet]
  * tk
+ * us
+ * ru
+ * uk
 
 

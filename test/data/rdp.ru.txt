@@ -1,0 +1,18 @@
+% By submitting a query to TCI's Whois Service
+% you agree to abide by the following terms of use:
+% https://www.tcinet.ru/documents/whois.pdf (in Russian)
+
+domain:        RDP.RU
+nserver:       ns1.rdp.ru. 62.113.116.19
+nserver:       ns2.rdp.ru. 94.103.86.13
+state:         REGISTERED, DELEGATED, VERIFIED
+org:           OOO RDP.RU
+registrar:     RU-CENTER-RU
+admin-contact: https://www.nic.ru/whois
+created:       2000-08-17T20:00:00Z
+paid-till:     2022-08-20T21:00:00Z
+free-date:     2022-09-21
+source:        TCI
+
+Last updated on 2022-06-13T12:16:30Z
+

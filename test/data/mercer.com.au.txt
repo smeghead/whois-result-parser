@@ -1,0 +1,47 @@
+Domain Name: MERCER.COM.AU
+Registry Domain ID: D407400000002652395-AU
+Registrar WHOIS Server: whois.auda.org.au
+Registrar URL: https://clarivate.com/markmonitor/solutions/contact-us/
+Last Modified: 2021-02-27T10:41:58Z
+Registrar Name: MarkMonitor Corporate Services Inc
+Registrar Abuse Contact Email: abusecomplaints@markmonitor.com
+Registrar Abuse Contact Phone: +61.2083895770
+Reseller Name:
+Status: clientDeleteProhibited https://afilias.com.au/get-au/whois-status-codes#clientDeleteProhibited
+Status: clientUpdateProhibited https://afilias.com.au/get-au/whois-status-codes#clientUpdateProhibited
+Status: serverRenewProhibited https://afilias.com.au/get-au/whois-status-codes#serverRenewProhibited
+Status Reason: Not Currently Eligible For Renewal
+Registrant Contact ID: MMR-140651
+Registrant Contact Name: Domain Administrator
+Tech Contact ID: MMR-143732
+Tech Contact Name: Domain Administrator
+Name Server: NS04.MMC.COM
+Name Server: NS02.MMC.COM
+Name Server: NS03.MMC.COM
+Name Server: NS01.MMC.COM
+DNSSEC: unsigned
+Registrant: Mercer Australia Pty Ltd
+Registrant ID: ACN 005315917
+Eligibility Type: Company
+
+>>> Last update of WHOIS database: 2022-06-13T12:12:37Z <<<
+
+
+
+Afilias Australia Pty Ltd (Afilias), for itself and on behalf of .au Domain Administration Limited (auDA), makes the WHOIS registration data directory service (WHOIS Service) available solely for the purposes of:
+
+(a) querying the availability of a domain name licence;
+
+(b) identifying the holder of a domain name licence; and/or
+
+(c) contacting the holder of a domain name licence in relation to that domain name and its use.
+
+The WHOIS Service must not be used for any other purpose (even if that purpose is lawful), including:
+
+(a) aggregating, collecting or compiling information from the WHOIS database, whether for personal or commercial purposes;
+
+(b) enabling the sending of unsolicited electronic communications; and / or
+
+(c) enabling high volume, automated, electronic processes that send queries or data to the systems of Afilias, any registrar, any domain name licence holder, or auDA.
+
+The WHOIS Service is provided for information purposes only. By using the WHOIS Service, you agree to be bound by these terms and conditions. The WHOIS Service is operated in accordance with the auDA WHOIS Policy (available at https://www.auda.org.au/policies/index-of-published-policies/2014/2014-07/ ).
