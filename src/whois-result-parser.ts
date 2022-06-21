@@ -120,6 +120,12 @@ const rules: {[key: string]: Rule} = {
         'creationDate': /Registered on: *([\S]+)/,
         'expirationDate': /Expiry date: *([\S]+)/,
     },
+    fr: {
+        'domainName': /^domain: *([^\s]+)/,
+        'updatedDate': /^last-update: *(\S+)/,
+        'creationDate': /^created: *(\S+)/,
+        'expirationDate': /^Expiry Date: *(\S+)/,
+    },
 
 };
 
