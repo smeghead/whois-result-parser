@@ -1,0 +1,43 @@
+
+domain.............: finlandabroad.fi
+status.............: Registered
+created............: 16.8.2018 07:56:21
+expires............: 16.8.2022 07:56:21
+available..........: 16.9.2022 07:56:21
+modified...........: 11.3.2022 08:49:47
+RegistryLock.......: no
+
+Nameservers
+
+nserver............: bayan.ns.cloudflare.com [OK]
+nserver............: fay.ns.cloudflare.com [OK]
+
+DNSSEC
+
+dnssec.............: signed delegation
+DS Key Tag  1.......: 2371
+Algorithm   1.......: 13
+Digest Type 1.......: 2
+Digest      1.......: 8352B0D8424510EFE6E3F87F09EFA91BE3E7F1E49E31A6D13C8D1162A910AB39
+
+Holder
+
+name...............: Ulkoministeriö
+register number....: 0245973-9
+address............: PL 480
+postal.............: 00023
+city...............: Valtioneuvosto
+country............: Finland
+phone..............: 
+holder email.......: 
+
+Registrar
+
+registrar..........: Valtion tieto- ja viestintätekniikkakeskus Valtori
+www................: www.valtori.fi
+
+>>> Last update of WHOIS database: 22.6.2022 16:32:02 (EET) <<<
+
+
+Copyright (c) Finnish Transport and Communications Agency Traficom
+

@@ -1,4 +1,7 @@
 const dayjs = require('dayjs');
+var customParseFormat = require('dayjs/plugin/customParseFormat')
+dayjs.extend(customParseFormat)
+
 
 class WhoisResultParser {
     private domainName: string;
@@ -26,8 +29,8 @@ class WhoisResultParser {
 //         console.log(rule);
         const whois: {[key: string]: any} = {};
         for (const key in rule) {
-            const obj: {[key: string]: RegExp} = rule;
-            whois[key] = searchPropertyValue(lines, key, obj[key]);
+            const obj: {[key: string]: ValueFinder} = rule;
+            whois[key] = obj[key].find(lines);
         }
         return whois as ParseResult;
     }
@@ -39,130 +42,167 @@ type ParseResult = {
     'creationDate': string|null;
     'expirationDate': string|null;
 }
+interface ValueFinder {
+    regex: RegExp;
+    find(lines: string[]): string|null;
+}
+class StringValueFinder implements ValueFinder {
+    regex: RegExp;
 
+    constructor(regex: RegExp) {
+        this.regex = regex;
+    }
+    find(lines: string[]): string|null {
+        if (this.regex.multiline) {
+            const matches = lines.join('\n').match(this.regex);
+            if ( ! matches) {
+                return null;
+            }
+            let val = matches[1];
+            return val;
+        }
+        const values = lines.map(line => {
+            const matches = line.match(this.regex);
+            if ( ! matches) {
+                return null;
+            }
+            let val = matches[1];
+            return val;
+        }).filter(val => val);
+        if (values.length === 0) {
+            return null;
+        }
+        return values[0];
+    }
+}
+class DateValueFinder implements ValueFinder {
+    regex: RegExp;
+    format: string;
+
+    constructor(regex: RegExp, format: string) {
+        this.regex = regex;
+        this.format = format;
+    }
+    find(lines: string[]): string|null {
+        const values = lines.map(line => {
+            const matches = line.match(this.regex);
+            if ( ! matches) {
+                return null;
+            }
+            let val = matches[1];
+            if (val) {
+                const d = this.format.length > 0 ? dayjs(val, this.format) : dayjs(val);
+                val = d.format();
+            }
+            return val;
+        }).filter(val => val);
+        if (values.length === 0) {
+            return null;
+        }
+    //     console.log(values);
+        return values[0];
+    }
+}
 type Rule = {
-    'domainName': RegExp;
-    'updatedDate': RegExp;
-    'creationDate': RegExp;
-    'expirationDate': RegExp;
+    'domainName': ValueFinder;
+    'updatedDate': ValueFinder;
+    'creationDate': ValueFinder;
+    'expirationDate': ValueFinder;
 }
 
 const defaultRule: Rule = {
-    'domainName': /^Domain Name: *([^\s]+)/,
-    'updatedDate': /^Updated Date: *(.+)/,
-    'creationDate': /^Creat(?:ed|ion) Date: *(.+)/,
-    'expirationDate': /Expir\w+ Date: *(.+)/,
+    'domainName': new StringValueFinder(/^Domain Name: *([^\s]+)/),
+    'updatedDate': new DateValueFinder(/^Updated Date: *(.+)/, ''),
+    'creationDate': new DateValueFinder(/^Creat(?:ed|ion) Date: *(.+)/, ''),
+    'expirationDate': new DateValueFinder(/Expir\w+ Date: *(.+)/, ''),
 };
 const rules: {[key: string]: Rule} = {
     jp: {
-        'domainName': /^\[Domain Name\]\s+([^\s]+)/,
-        'updatedDate': /^\[最終更新\]\s+(.+)$/,
-        'creationDate': /^\[登録年月日\]\s+(.+)$/,
-        'expirationDate': /^\[有効期限\]\s+(.+)$/,
+        'domainName': new StringValueFinder(/^\[Domain Name\]\s+([^\s]+)/),
+        'updatedDate': new DateValueFinder(/^\[最終更新\]\s+(.+)$/, ''),
+        'creationDate': new DateValueFinder(/^\[登録年月日\]\s+(.+)$/, ''),
+        'expirationDate': new DateValueFinder(/^\[有効期限\]\s+(.+)$/, ''),
     },
     edu: {
-        'domainName': /^Domain Name: *([^\s]+)/,
-        'updatedDate': /^Domain record last updated: *(.+)/,
-        'creationDate': /^Domain record activated: *(.+)/,
-        'expirationDate': /^Domain expires: *(.+)/,
+        'domainName': new StringValueFinder(/^Domain Name: *([^\s]+)/),
+        'updatedDate': new DateValueFinder(/^Domain record last updated: *(.+)/, ''),
+        'creationDate': new DateValueFinder(/^Domain record activated: *(.+)/, ''),
+        'expirationDate': new DateValueFinder(/^Domain expires: *(.+)/, ''),
     },
     int: {
-        'domainName': /^domain: *([^\s]+)/,
-        'updatedDate': /^changed: *(.+)/,
-        'creationDate': /^created: *(.+)/,
-        'expirationDate': /^Domain expires: *(.+)/,
+        'domainName': new StringValueFinder(/^domain: *([^\s]+)/),
+        'updatedDate': new DateValueFinder(/^changed: *(.+)/, ''),
+        'creationDate': new DateValueFinder(/^created: *(.+)/, ''),
+        'expirationDate': new DateValueFinder(/^Domain expires: *(.+)/, ''),
     },
     cn: {
-        'domainName': /^Domain Name: *([^\s]+)/,
-        'updatedDate': /^changed: *(.+)/,
-        'creationDate': /^Registration Time: *(.+)/,
-        'expirationDate': /^Expiration Time: *(.+)/,
+        'domainName': new StringValueFinder(/^Domain Name: *([^\s]+)/),
+        'updatedDate': new DateValueFinder(/^changed: *(.+)/, ''),
+        'creationDate': new DateValueFinder(/^Registration Time: *(.+)/, ''),
+        'expirationDate': new DateValueFinder(/^Expiration Time: *(.+)/, ''),
     },
     id: {
-        'domainName': /^Domain Name: *([^\s]+)/,
-        'updatedDate': /^Last Updated On: *(.+)/,
-        'creationDate': /^Created On: *(.+)/,
-        'expirationDate': /^Expiration Date: *(.+)/,
+        'domainName': new StringValueFinder(/^Domain Name: *([^\s]+)/),
+        'updatedDate': new DateValueFinder(/^Last Updated On: *(.+)/, ''),
+        'creationDate': new DateValueFinder(/^Created On: *(.+)/, ''),
+        'expirationDate': new DateValueFinder(/^Expiration Date: *(.+)/, ''),
     },
     br: {
-        'domainName': /^domain: *([^\s]+)/,
-        'updatedDate': /^changed: *(\d{8})/,
-        'creationDate': /^created: *(\d{8})/,
-        'expirationDate': /^expires: *(\d{8})/,
+        'domainName': new StringValueFinder(/^domain: *([^\s]+)/),
+        'updatedDate': new DateValueFinder(/^changed: *(\d{8})/, ''),
+        'creationDate': new DateValueFinder(/^created: *(\d{8})/, ''),
+        'expirationDate': new DateValueFinder(/^expires: *(\d{8})/, ''),
     },
     tk: {
-        'domainName': /Domain name:\s*(\S+)/m,
-        'updatedDate': /^changed: *(\d{8})/,
-        'creationDate': /Domain registered: *([\S]+)/,
-        'expirationDate': /Record will expire on: *([\S]+)/,
+        'domainName': new StringValueFinder(/Domain name:\s*(\S+)/m),
+        'updatedDate': new DateValueFinder(/^changed: *(\d{8})/, ''),
+        'creationDate': new DateValueFinder(/Domain registered: *([\S]+)/, ''),
+        'expirationDate': new DateValueFinder(/Record will expire on: *([\S]+)/, ''),
     },
     de: {
-        'domainName': /^Domain: *([^\s]+)/,
-        'updatedDate': /^Changed: *(.+)/,
-        'creationDate': /^Created: *(.+)/,
-        'expirationDate': /^Domain expires: *(.+)/,
+        'domainName': new StringValueFinder(/^Domain: *([^\s]+)/),
+        'updatedDate': new DateValueFinder(/^Changed: *(.+)/, ''),
+        'creationDate': new DateValueFinder(/^Created: *(.+)/, ''),
+        'expirationDate': new DateValueFinder(/^Domain expires: *(.+)/, ''),
     },
     au: {
-        'domainName': /^Domain Name: *([^\s]+)/,
-        'updatedDate': /^Last Modified: *(.+)/,
-        'creationDate': /^Created: *(.+)/,
-        'expirationDate': /^Domain expires: *(.+)/,
+        'domainName': new StringValueFinder(/^Domain Name: *([^\s]+)/),
+        'updatedDate': new DateValueFinder(/^Last Modified: *(.+)/, ''),
+        'creationDate': new DateValueFinder(/^Created: *(.+)/, ''),
+        'expirationDate': new DateValueFinder(/^Domain expires: *(.+)/, ''),
     },
     ru: {
-        'domainName': /^domain: *([^\s]+)/,
-        'updatedDate': /^Last updated on *(\S+)/,
-        'creationDate': /^created: *(\S+)/,
-        'expirationDate': /^paid-till: *(\S+)/,
+        'domainName': new StringValueFinder(/^domain: *([^\s]+)/),
+        'updatedDate': new DateValueFinder(/^Last updated on *(\S+)/, ''),
+        'creationDate': new DateValueFinder(/^created: *(\S+)/, ''),
+        'expirationDate': new DateValueFinder(/^paid-till: *(\S+)/, ''),
     },
     uk: {
-        'domainName': /Domain name:\s*(\S+)/m,
-        'updatedDate': /Last updated: *(\S+)/,
-        'creationDate': /Registered on: *([\S]+)/,
-        'expirationDate': /Expiry date: *([\S]+)/,
+        'domainName': new StringValueFinder(/Domain name:\s*(\S+)/m),
+        'updatedDate': new DateValueFinder(/Last updated: *(\S+)/, ''),
+        'creationDate': new DateValueFinder(/Registered on: *([\S]+)/, ''),
+        'expirationDate': new DateValueFinder(/Expiry date: *([\S]+)/, ''),
     },
     fr: {
-        'domainName': /^domain: *([^\s]+)/,
-        'updatedDate': /^last-update: *(\S+)/,
-        'creationDate': /^created: *(\S+)/,
-        'expirationDate': /^Expiry Date: *(\S+)/,
+        'domainName': new StringValueFinder(/^domain: *([^\s]+)/),
+        'updatedDate': new DateValueFinder(/^last-update: *(\S+)/, ''),
+        'creationDate': new DateValueFinder(/^created: *(\S+)/, ''),
+        'expirationDate': new DateValueFinder(/^Expiry Date: *(\S+)/, ''),
+    },
+    nl: {
+        'domainName': new StringValueFinder(/^Domain name: *([^\s]+)/),
+        'updatedDate': new DateValueFinder(/^Updated Date: *(\S+)/, ''),
+        'creationDate': new DateValueFinder(/^Creation Date: *(\S+)/, ''),
+        'expirationDate': new DateValueFinder(/^Expiry Date: *(\S+)/, ''),
+    },
+    fi: {
+        'domainName': new StringValueFinder(/^domain.............: *([^\s]+)/),
+        'updatedDate': new DateValueFinder(/^modified...........: *(.+)/, 'D.M.YYYY hh:mm:ss'),
+        'creationDate': new DateValueFinder(/^created............: *(.+)/, 'D.M.YYYY hh:mm:ss'),
+        'expirationDate': new DateValueFinder(/^expires............: *(.+)/, 'D.M.YYYY hh:mm:ss'),
     },
 
-};
 
-const searchPropertyValue = (lines: string[], key: string, regex: RegExp): string|null => {
-    if (regex.multiline) {
-        const matches = lines.join('\n').match(regex);
-        if ( ! matches) {
-            return null;
-        }
-        let val = matches[1];
-        if (key.endsWith('Date')) {
-            if (val) {
-                const d = dayjs(val);
-                val = d.format();
-            }
-        }
-        return val;
-    }
-    const values = lines.map(line => {
-        const matches = line.match(regex);
-        if ( ! matches) {
-            return null;
-        }
-        let val = matches[1];
-        if (key.endsWith('Date')) {
-            if (val) {
-                const d = dayjs(val);
-                val = d.format();
-            }
-        }
-        return val;
-    }).filter(val => val);
-    if (values.length === 0) {
-        return null;
-    }
-//     console.log(values);
-    return values[0];
 };
 
 module.exports = WhoisResultParser;
