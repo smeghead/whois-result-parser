@@ -4,6 +4,11 @@ Parse the result of the `whois` command to get the expiration date, creation dat
 
 It is intended to be used to parse the raw text of the `whois` command obtained using a package such as` whois-light`.
 
+https://www.npmjs.com/package/@smeghead7/whois-result-parser
+
+[![npm version](https://badge.fury.io/js/@smeghead7%2Fwhois-result-parser.svg)](https://badge.fury.io/js/@smeghead7%2Fwhois-result-parser)
+![Actions Status](https://github.com/smeghead/whois-result-parser/actions/workflows/node.js.yml/badge.svg)
+
 ## Usage ##
 
 ```bash
