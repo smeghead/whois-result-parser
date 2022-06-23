@@ -1,0 +1,27 @@
+
+DOMAIN NAME:           instytutpolski.pl
+registrant type:       organization
+nameservers:           nsr1.domeny.com. 
+                       nsr2.domeny.com. 
+                       nsr3.domeny.com. 
+                       nsr4.domeny.com. 
+created:               2019.04.25 08:44:56
+last modified:         2020.01.09 14:43:58
+renewal date:          2023.04.25 08:44:56
+
+no option
+
+dnssec:                Unsigned
+
+
+REGISTRAR:
+cyber_Folks S.A.
+ul. Franklina Roosevelta 22
+60-829 Poznań
+Polska/Poland
+tel.: +48.122963663
+info@domeny.pl
+
+WHOIS database responses: https://dns.pl/en/whois
+
+WHOIS displays data with a delay not exceeding 15 minutes in relation to the .pl Registry system

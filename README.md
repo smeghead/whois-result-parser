@@ -148,12 +148,12 @@ npm install dayjs
  * es [not tested yet]
  * et [not tested yet]
  * eu [not tested yet]
- * fi [not tested yet]
+ * fi
  * fj [not tested yet]
  * fk [not tested yet]
  * fm [not tested yet]
  * fo [not tested yet]
- * fr [not tested yet]
+ * fr
  * ga [not tested yet]
  * gb [not tested yet]
  * gd [not tested yet]
@@ -205,5 +205,7 @@ npm install dayjs
  * us
  * ru
  * uk
+ * nl
+ * pl
 
 
