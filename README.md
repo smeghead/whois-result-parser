@@ -141,7 +141,7 @@ npm install dayjs
  * do [not tested yet]
  * dz [not tested yet]
  * ec [not tested yet]
- * ee [not tested yet]
+ * ee
  * eg [not tested yet]
  * eh [not tested yet]
  * er [not tested yet]
@@ -200,7 +200,7 @@ npm install dayjs
  * km [not tested yet]
  * kn [not tested yet]
  * kp [not tested yet]
- * kr [not tested yet]
+ * kr
  * tk
  * us
  * ru

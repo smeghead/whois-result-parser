@@ -1,0 +1,57 @@
+query : mofa.go.kr
+
+
+# KOREAN(UTF8)
+
+도메인이름                  : mofa.go.kr
+등록인                      : 외교부
+등록인 주소                 : 서울특별시 종로구 사직로8길 60 .
+등록인 우편번호             : 03172
+책임자                      : 외교부
+책임자 전자우편             : ipmd@mofa.go.kr
+책임자 전화번호             : 02-2100-7157
+등록일                      : 2013. 03. 19.
+최근 정보 변경일            : 2020. 09. 24.
+사용 종료일                 : 2027. 03. 19.
+정보공개여부                : Y
+등록대행자                  : (주)아이네임즈(http://www.inames.co.kr)
+DNSSEC                      : 미서명
+
+1차 네임서버 정보
+   호스트이름               : ns.gcc.go.kr
+   IP 주소                  : 152.99.1.10
+
+2차 네임서버 정보
+   호스트이름               : ns2.gcc.go.kr
+   IP 주소                  : 152.99.200.6
+
+네임서버 이름이 .kr이 아닌 경우는 IP주소가 보이지 않습니다.
+
+
+# ENGLISH
+
+Domain Name                 : mofa.go.kr
+Registrant                  : Ministry of Foreign Affairs
+Registrant Address          : Central Government Complex, 60 Sajik-ro 8-gil Jongno-gu, Seoul, KR
+Registrant Zip Code         : 03172
+Administrative Contact(AC)  : Ministry of Foreign Affairs
+AC E-Mail                   : ipmd@mofa.go.kr
+AC Phone Number             : 02-2100-7157
+Registered Date             : 2013. 03. 19.
+Last Updated Date           : 2020. 09. 24.
+Expiration Date             : 2027. 03. 19.
+Publishes                   : Y
+Authorized Agency           : Inames Co., Ltd.(http://www.inames.co.kr)
+DNSSEC                      : unsigned
+
+Primary Name Server
+   Host Name                : ns.gcc.go.kr
+   IP Address               : 152.99.1.10
+
+Secondary Name Server
+   Host Name                : ns2.gcc.go.kr
+   IP Address               : 152.99.200.6
+
+
+- KISA/KRNIC WHOIS Service -
+

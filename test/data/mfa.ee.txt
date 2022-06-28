@@ -1,0 +1,50 @@
+Search results may not be used for commercial, advertising, recompilation,
+repackaging, redistribution, reuse, obscuring or other similar activities.
+
+Estonia .ee Top Level Domain WHOIS server
+
+Domain:
+name:       mfa.ee
+status:     ok (paid and in zone)
+registered: 2010-07-04 04:23:48 +03:00
+changed:    2021-09-16 08:29:19 +03:00
+expire:     2026-09-09
+outzone:    
+delete:     
+
+Registrant:
+name:       Välisministeerium
+org id:     70002526
+country:    EE
+email:      Not Disclosed - Visit www.internet.ee for webbased WHOIS
+changed:    2021-09-16 08:29:19 +03:00
+
+Administrative contact:
+name:       Not Disclosed - Visit www.internet.ee for webbased WHOIS
+email:      Not Disclosed - Visit www.internet.ee for webbased WHOIS
+changed:    Not Disclosed - Visit www.internet.ee for webbased WHOIS
+
+Technical contact:
+name:       Not Disclosed - Visit www.internet.ee for webbased WHOIS
+email:      Not Disclosed - Visit www.internet.ee for webbased WHOIS
+changed:    Not Disclosed - Visit www.internet.ee for webbased WHOIS
+
+Registrar:
+name:       Riigi Infokommunikatsiooni Sihtasutus
+url:        http://www.riks.ee/
+phone:      +372 699 2222
+changed:    2019-07-05 15:16:22 +03:00
+
+Name servers:
+nserver:   saturn.eu.estemb.be
+nserver:   ns.vm.ee
+nserver:   ns2.vm.ee
+changed:   2017-06-15 09:21:44 +03:00
+
+DNSSEC:
+dnskey:   256 3 8 AwEAAfI82nKzP+o+UsoyikZNS1rFV0/DBZlNC21XDixqsxjIyaKtvYqV V9Hf5UbQ1V6TT95I2CdXJ2yFMg/Z/5uBQdyZf1OZA0DF/2CdO984voB/ N6LmQ62eyX4yFt4Oe7UxzkfZRknaaO/W9gk7RDCISozyxuRMs2W/s59Z 8t1sbMsluvC+/XNFeNlRaQE+BBsXSXNyq4ZaN4i/ad01m3lMDiy9oS7q /f5T9b7z7cpACP/R/LfkSFYKKDo/ahur5zMiknlbFA7G5dHAiY76zD4z le9GEX53/2oDzAVQ2iKzAXdaIrvNElHrOE9bbEhMrQf6Pa5b4NdK6PTl txi7yfd16js=
+dnskey:   257 3 8 AwEAAakzX3SpUIEr9DuT0h2qrwoNKsYZHyGhZzndKCgP2/KJr+AKPb9T 6lSZlnKTSxaBU8Sw9dUx2AIQtXT2+75huEaQtZ0BCHVfK9a5vrDLEyLE SY7+JDIwHFmKamDsqxLWdk404YHUX37l8iqqvaD/14D8lrjaH/OI0DtT D1Us8ypVHV43klrCYa7V/0ks8a4me1853G/Zl3/Ksfcq2pthjo6ALvHe IGN4BlK4VaebxTL3mZ96OIeqCpZRZb60p+gJrJJQOBI7OBQs1Kzkq6kj UZ9Lmsde2FUaSmuCfDbc8e9iIU5HZytjCIEyLzZgvL/ug9yUcaEBmWeq qrEHlTL4XQU=
+changed:  2017-10-05 09:36:50 +03:00
+
+Estonia .ee Top Level Domain WHOIS server
+More information at http://internet.ee
