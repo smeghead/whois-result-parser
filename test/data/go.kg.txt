@@ -1,0 +1,26 @@
+% This is the .kg ccTLD Whois server
+% Register your own domain at http://www.cctld.kg
+% Use @cctld_kg_bot telegram bot for whois service
+
+Domain GO.KG 
+
+Administrative Contact:
+   PID: HOSTER-KG
+
+Technical Contact:
+   PID: HOSTER-KG
+
+Billing Contact:
+   PID: HOSTER-KG
+
+Domain support: ISP AsiaInfo (+996 312 964488)
+
+Record created: Thu Jul  9 16:09:35 2009
+Record last updated on:  Fri Feb  2 14:21:14 2018
+Record expires on: Thu Aug  7 23:59:00 2025
+
+Name servers in the listed order:
+
+NS1.HOSTER.KG 85.115.208.101
+NS2.HOSTER.KG 85.115.208.52
+NS3.HOSTER.KG 85.115.208.132NS4.HOSTER.KG 85.115.208.131

@@ -1,0 +1,84 @@
+Domain Name: canada.ca
+Registry Domain ID: D124992-CIRA
+Registrar WHOIS Server: whois.ca.fury.ca
+Registrar URL: authenticweb.com
+Updated Date: 2021-12-15T15:56:31Z
+Creation Date: 2002-11-25T20:16:47Z
+Registry Expiry Date: 2022-10-16T04:00:00Z
+Registrar: Authentic Web Inc.
+Registrar IANA ID: not applicable
+Registrar Abuse Contact Email:
+Registrar Abuse Contact Phone:
+Domain Status: clientTransferProhibited https://icann.org/epp#clientTransferProhibited
+Domain Status: clientUpdateProhibited https://icann.org/epp#clientUpdateProhibited
+Registry Registrant ID: 103271230-CIRA
+Registrant Name: Geoff Worthing
+Registrant Organization: Shared Services Canada
+Registrant Street: 21 Fitzgerald Road
+Registrant City: Ottawa
+Registrant State/Province: ON
+Registrant Postal Code: K1A0L5
+Registrant Country: CA
+Registrant Phone: +1.6136978032
+Registrant Phone Ext:
+Registrant Fax:
+Registrant Fax Ext:
+Registrant Email: registry@gc.ca
+Registry Admin ID: 103270988-CIRA
+Admin Name: Geoff Worthing
+Admin Organization: Shared Services Canada
+Admin Street: 21 Fitzgerald Road
+Admin City: Ottawa
+Admin State/Province: ON
+Admin Postal Code: K1A0L5
+Admin Country: CA
+Admin Phone: +1.6136978032
+Admin Phone Ext:
+Admin Fax:
+Admin Fax Ext:
+Admin Email: registry@gc.ca
+Registry Tech ID: 74838843-CIRA
+Tech Name: Michelle Saunders
+Tech Organization: Shared Services Canada
+Tech Street: 21 Fitzgerald Road
+Tech City: Ottawa
+Tech State/Province: ON
+Tech Postal Code: K1A0L5
+Tech Country: CA
+Tech Phone: +1.6133010722
+Tech Phone Ext:
+Tech Fax:
+Tech Fax Ext:
+Tech Email: registry@gc.ca
+Registry Billing ID:
+Billing Name:
+Billing Organization:
+Billing Street:
+Billing City:
+Billing State/Province:
+Billing Postal Code:
+Billing Country:
+Billing Phone:
+Billing Phone Ext:
+Billing Fax:
+Billing Fax Ext:
+Billing Email:
+Name Server: dns1.nrc.ca
+Name Server: dns2.nrc.ca
+Name Server: gocns-kedc.gc.ca
+Name Server: gocns-pdp.gc.ca
+Name Server: ns1.d-zone.ca
+Name Server: ns2.d-zone.ca
+Name Server: xns-kedc-1.ssc-spc.gc.ca
+Name Server: xns-kedc.ssc-spc.gc.ca
+DNSSEC: unsigned
+URL of the ICANN Whois Inaccuracy Complaint Form: https://www.icann.org/wicf/
+>>> Last update of WHOIS database: 2022-06-30T15:20:10Z <<<
+
+For more information on Whois status codes, please visit https://icann.org/epp
+
+%
+% Use of CIRA's WHOIS service is governed by the Terms of Use in its Legal
+% Notice, available at http://www.cira.ca/legal-notice/?lang=en
+%
+% (c) 2022 Canadian Internet Registration Authority, (http://www.cira.ca/)

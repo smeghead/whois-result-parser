@@ -115,7 +115,7 @@ npm install dayjs
  * bw [not tested yet]
  * by [not tested yet]
  * bz [not tested yet]
- * ca [not tested yet]
+ * ca
  * cc [not tested yet]
  * cd [not tested yet]
  * cf [not tested yet]
@@ -194,7 +194,7 @@ npm install dayjs
  * jo [not tested yet]
  * jp
  * ke [not tested yet]
- * kg [not tested yet]
+ * kg
  * kh [not tested yet]
  * ki [not tested yet]
  * km [not tested yet]
