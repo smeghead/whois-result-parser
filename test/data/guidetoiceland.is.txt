@@ -1,0 +1,50 @@
+% This is the ISNIC Whois server.
+%
+% Rights restricted by copyright.
+% See https://www.isnic.is/en/about/copyright
+
+domain:       guidetoiceland.is
+registrant:   GGE218-IS
+admin-c:      IAS3-IS
+tech-c:       SG252-IS
+zone-c:       AR64-IS
+billing-c:    GGE218-IS
+nserver:      ns-772.awsdns-32.net
+nserver:      ns-56.awsdns-07.com
+nserver:      ns-1496.awsdns-59.org
+nserver:      ns-1717.awsdns-22.co.uk
+dnssec:       unsigned delegation
+created:      September 18 2012
+expires:      September 18 2022
+source:       ISNIC 
+
+role:         Travelshift ehf.
+nic-hdl:      GGE218-IS
+address:      Skolavordustig 11
+address:      IS-101 Reykjavik
+phone:        +354 5197999
+e-mail:       domains@guidetoiceland.is
+created:      August 19 2020
+source:       ISNIC 
+
+nic-hdl:      IAS3-IS
+address:      IS
+created:      May 25 2012
+source:       ISNIC 
+
+nic-hdl:      SG252-IS
+address:      IS
+created:      June  9 2008
+source:       ISNIC 
+
+role:         Amazon Route 53
+nic-hdl:      AR64-IS
+address:      Amazon.com
+address:      P.O. Box 81226
+address:      Seattle, Washington 98108-1226
+address:      US
+e-mail:       awsdns-hostmaster@amazon.com
+created:      September 14 2011
+source:       ISNIC 
+
+

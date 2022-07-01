@@ -187,7 +187,7 @@ npm install dayjs
  * io [not tested yet]
  * iq [not tested yet]
  * ir [not tested yet]
- * is [not tested yet]
+ * is
  * it [not tested yet]
  * je [not tested yet]
  * jm [not tested yet]
@@ -207,5 +207,7 @@ npm install dayjs
  * uk
  * nl
  * pl
+ * sk
+ * se
 
 

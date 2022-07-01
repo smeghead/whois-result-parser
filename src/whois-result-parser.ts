@@ -225,6 +225,24 @@ const rules: {[key: string]: Rule} = {
         'creationDate': new DateValueFinder(/^Record created: *(.+)/, ''),
         'expirationDate': new DateValueFinder(/^Record expires on: *(.+)/, ''),
     },
+    sk: {
+        'domainName': new StringValueFinder(/^Domain:\s*(\S+)/),
+        'updatedDate': new DateValueFinder(/^Updated: *(.+)/, ''),
+        'creationDate': new DateValueFinder(/^Created: *(.+)/, ''),
+        'expirationDate': new DateValueFinder(/^Valid Until: *(.+)/, ''),
+    },
+    se: {
+        'domainName': new StringValueFinder(/^domain:\s*(\S+)/),
+        'updatedDate': new DateValueFinder(/^modified: *(.+)/, ''),
+        'creationDate': new DateValueFinder(/^created: *(.+)/, ''),
+        'expirationDate': new DateValueFinder(/^expires: *(.+)/, ''),
+    },
+    is: {
+        'domainName': new StringValueFinder(/^domain:\s*(\S+)/),
+        'updatedDate': new DateValueFinder(/^modified: *(.+)/, ''),
+        'creationDate': new DateValueFinder(/^created: *(.+)/, ''),
+        'expirationDate': new DateValueFinder(/^expires: *(.+)/, ''),
+    },
 
 
 };

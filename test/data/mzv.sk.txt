@@ -1,0 +1,38 @@
+Domain:                       mzv.sk
+Registrant:                   MZAH-0002
+Admin Contact:                MZAH-0002
+Tech Contact:                 MZAH-0002
+Registrar:                    SWAN-0002
+Created:                      2003-05-12
+Updated:                      2022-05-09
+Valid Until:                  2023-05-12
+Nameserver:                   ns1.mfa.sk
+Nameserver:                   ns2.mfa.sk
+EPP Status:                   ok
+
+Registrar:                    SWAN-0002
+Name:                         SWAN, a. s.
+Organization:                 SWAN, a. s.
+Organization ID:              35680202
+Phone:                        +421.235000516
+Email:                        domeny@swan.sk
+Street:                       Landererova 12
+City:                         Bratislava
+Postal Code:                  81109
+Country Code:                 SK
+Created:                      2017-09-01
+Updated:                      2022-07-01
+
+Contact:                      MZAH-0002
+Name:                         Ministerstvo zahraničných vecí a európskych záležitostí SR
+Organization:                 Ministerstvo zahraničných vecí a európskych záležitostí SR
+Organization ID:              699021
+Phone:                        +421.259782070
+Email:                        oikt@mzv.sk
+Street:                       Hlboká 2
+City:                         Bratislava
+Postal Code:                  83336
+Country Code:                 SK
+Registrar:                    SWAN-0002
+Created:                      2017-09-01
+Updated:                      2022-01-18
