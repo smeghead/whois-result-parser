@@ -1,0 +1,53 @@
+** Domain Name: mfa.gov.tr
+
+** Registrant:
+   T.C. Dışişleri Bakanlığı
+   Dışişleri Bakanlığı Balgat 06100
+   
+   Ankara,
+     Türkiye
+   webmaster@mfa.gov.tr
+   + 90-312-2921000-
+   + 90-312-2872360
+
+
+** Administrative Contact:
+NIC Handle		: tdb14-metu
+Organization Name	: T.C. Dışişleri Bakanlığı
+Address			: T.C. Dışişleri Bakanlığı
+			  BALGAT
+			  Ankara,06100
+			  Türkiye
+Phone			: + 90-312-2921218-
+Fax			: + 
+
+
+** Technical Contact:
+NIC Handle		: tdb14-metu
+Organization Name	: T.C. Dışişleri Bakanlığı
+Address			: T.C. Dışişleri Bakanlığı
+			  BALGAT
+			  Ankara,06100
+			  Türkiye
+Phone			: + 90-312-2921218-
+Fax			: + 
+
+
+** Billing Contact:
+NIC Handle		: tdb14-metu
+Organization Name	: T.C. Dışişleri Bakanlığı
+Address			: T.C. Dışişleri Bakanlığı
+			  BALGAT
+			  Ankara,06100
+			  Türkiye
+Phone			: + 90-312-2921218-
+Fax			: + 
+
+
+** Domain Servers:
+inter-dns.mfa.gov.tr	212.174.190.2
+inter2-dns.mfa.gov.tr	212.174.190.9
+
+** Additional Info:
+Created on..............: 1998-Oct-14.
+Expires on..............: 2022-Oct-13.

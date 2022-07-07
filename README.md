@@ -126,7 +126,7 @@ npm install dayjs
  * cl [not tested yet]
  * cm [not tested yet]
  * cn
- * co [not tested yet]
+ * co
  * cr [not tested yet]
  * cu [not tested yet]
  * cv [not tested yet]
