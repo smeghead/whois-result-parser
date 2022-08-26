@@ -35,20 +35,24 @@ const WhoisResultParser = require('@smeghead7/whois-result-parser');
 
 ## Development Environment ##
 
-open development shell.
+
+### Development initialize ###
+
+open development shell by root user.
+and you will change owner of mouted files.
+
+```bash
+docker-compose run --rm -u 0 node sh
+# npm install
+# chown node:node -R .
+```
+
+### Open development shell.
+
+open development shell by node user.
 
 ```bash
 docker-compose run --rm node sh
-```
-
-### initialize ###
-
-```bash
-npm init
-npm install --save-dev typescript
-npx tsc --init
-npm install --save-dev jest
-npm install dayjs
 ```
 
 ## domains ##
@@ -209,5 +213,6 @@ npm install dayjs
  * pl
  * sk
  * se
+ * tv
 
 

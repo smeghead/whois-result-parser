@@ -1,4 +1,4 @@
-#!/usr/bin/bash
+#!/bin/sh
 DOMAIN=$1
 
 if [ -z "$DOMAIN" ]; then
